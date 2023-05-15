@@ -1,0 +1,63 @@
+<!--표 만들기 태그-->
+<!DOCTYPE html> <!--html:5자동완성-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tag14</title><!--타이틀-->
+     <!--css코드 시작, css코드 내부에는 주석을 달 수 없다-->
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        thead {
+            text-align: center; background-color: grey;
+        }
+        th, td {
+            min-width: 200px;
+            border: 1px solid black;
+        }
+    </style>
+    <!--border-collapse : 테이블의 경계선을 하나로 합친다. thead : 가운데정렬, 
+        배경색은 회색 th,td : 최소너비는 200픽셀, 경계선은 1픽셀 검정색선을 사용 -->
+</head>
+<body>
+    <table cellpadding=5><!--cellpadding: 셀 내부와 글자 사이의 간격 5-->
+        <thead>
+            <tr> <!--제목-->
+                <th>형식</th> <!--1열-->
+                <th>구성</th> <!--2열-->
+                <th>내용</th> <!--3열-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <!--1행-->
+                <td rowspan=6>&lt;TABLE&gt;</td> <!--1열 아래로 6개셀 합침-->
+                <td>&lt;TABLE BORDER&gt;...&lt;/TABLE&gt; not supported</td> <!--2열-->
+                <td>표의 전체 형식을 나타냅니다.</td> <!--3열-->
+            </tr>
+            <tr> <!--2행-->
+                <td>&lt;TR&gt;&lt;TD&gt;&lt;/TD&gt;&lt;/TR&gt;</td> <!--2열-->
+                <td>표 내부에 들어갈 형식을 정의합니다.</td> <!--3열-->
+            </tr>
+            <tr> <!--3행-->
+                <td>&lt;TD COLSPAN=n&gt;</td> <!--2열-->
+                <td>가로칸을 n만큼 합쳐줍니다.</td> <!--3열-->
+            </tr>
+            <tr> <!--4행-->
+                <td>&lt;TD ROWSPAN=n&gt;</td> <!--2열-->
+                <td>세로칸을 n만큼 합쳐줍니다.</td> <!--3열-->
+            </tr>
+            <tr> <!--5행-->
+                <td style="color:red">&lt;TD ALIGN=...&gt; not supported</td> <!--2열-->
+                <td>표안의 좌우 정렬 방식을 정의합니다.</td> <!--3열-->
+            </tr>
+            <tr> <!--6행-->
+                <td style="color:red">&lt;TD VALIGN=...&gt; not supported</td> <!--2열-->
+                <td>표안의 상하 정렬 방식을 정의합니다.</td> <!--3열-->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

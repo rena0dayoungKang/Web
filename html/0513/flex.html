@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        * { 
+            border : 1px solid red;
+        }
+    </style>
+</head>
+
+<body style="display: flex; flex-direction: column; height: 100vh; margin : 0px">
+    <header style="flex-grow: 1;">
+        header
+    </header>
+    <main style="display: flex; flex-grow: 5; flex-direction: row;">
+        <div style="display:flex; width:200px">
+            sidebar
+        </div>
+        <div style="display: flex; flex-grow:1;">
+            main
+        </div>
+    </main>
+    <footer style="flex-grow: 2;">footer</footer>
+</body>
+</html>

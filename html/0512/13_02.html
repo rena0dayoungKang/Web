@@ -1,0 +1,19 @@
+<!DOCTYPE html> <!--html:5자동완성-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>창만들기</title> <!--title--> 
+</head>
+<body> 
+    <div style="display: flex; width: 100%;">
+        <!--화면에 마진이 없도록 전체100%로 지정-->
+        <iframe src="https://www.nate.com" style="height:100vh; width:30%; border:0;"></iframe>
+        <!--창을 만들고 소스는 링크로 지정. 높이는 화면의 전체높이, 가로30%, 경계없음-->
+        <iframe src="https://www.daum.net" name="content" style="height:100vh; 
+        flex-grow:1; border:0;"></iframe>
+        <!--창을 만들고 소스는 링크로 지정. 높이는 화면의 전체높이, 경계없음-->
+    </div>
+</body>
+</html>

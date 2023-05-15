@@ -1,0 +1,48 @@
+<!DOCTYPE html> <!--html:5자동완성-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 폼 만들기</title>   <!--title--> 
+</head>
+<body>
+    
+    <FORM METHOD=POST name='fm'> 
+        <!-- form: 사용자의 입력을 받을 수 있는 양식, POST방식: 서버로 데이터저장하는형태, 양식이름은fm -->
+        <table width=650 border=1 cellspacing=0 cellpadding=5>
+        <!--테이블 넓이는 650, 경계선은 1, 
+            cellspacing: 테이블과 셀간의 간격  cellpadding: 셀 내부와 글자 사이의 간격 -->
+        <tr>
+            <td><b>번호</b></td> <!--굵은글씨B-->
+            <td><input type=text name=id size=70 maxlength=70 value=1 readonly></td>
+            <!--번호 입력하는 칸, 읽기전용이라서 쓸 수는 없다. 기본 나타나는 값은 1로 고정-->
+        </tr>
+        <tr>
+            <td><b>성별</b></td> <!--굵은글씨B-->
+            <td>
+                <select name=sex>
+                    <option value='M' selected>남자
+                    <option value='W'>여자
+                </select>
+                <!--성별을 선택하는 select 옵션. 남자와 여자 순서대로-->
+            </td>
+        </tr>
+        <tr>
+            <td><b>성명</b></td> <!--굵은글씨B-->
+            <td><input type=text name=name size=70 maxlength=70 value='레이나'></td>
+             <!--성명 입력하는 칸, 기본 나타나는 값을 레이나-->
+        </tr>
+        <tr>
+            <td><b>주소</b></td> <!--굵은글씨B-->
+            <td><input type=text name=addr size=70 maxlengt=70 value='서울시 어딘가 살고 있군'></td>
+            <!--주소입력하는칸, 기본 나타나는 값은 value로 지정 -->
+        </tr>
+        <tr>
+            <td><b>전화번호</b></td> <!--굵은글씨B-->
+            <td><input type=text name=tel size=70 maxlength=70 value=''></td>
+            <!--전화번호 입력하는 칸, 칸 크기는 70, 최대 입력길이는 70, 기본값은공백 -->
+        </tr>
+    </FORM>
+</body>
+</html>

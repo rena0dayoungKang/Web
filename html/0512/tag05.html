@@ -1,0 +1,58 @@
+<!--목록을 정리해 주는 태그-->
+<!DOCTYPE html> <!--html:5자동완성-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tag05</title>
+     <!--css코드 시작, css코드 내부에는 주석을 달 수 없다-->
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        thead {
+            text-align: center; background-color: grey;
+        }
+        th, td {
+            min-width: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table cellpadding=5>
+        <thead>
+            <tr> <!--제목-->
+                <th>형식</th>
+                <th>구성</th>
+                <th>내용</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <!--1행-->
+                <td rowspan=5>&lt;LI&gt;하위</td> 
+                <!--rowspan : 열 포함 아래로 5개까지 셀합치기-->
+                <td>&lt;UL&gt;...&lt;/UL&gt; 상위</td>
+                <td>순서가 없는 목록으로 일반적인 나열을 말합니다.</td>
+            </tr>
+            <tr> <!--2행-->
+                <td>&lt;OL&gt;...&lt;/OL&gt;</td>
+                <td>순서가 있는 목록으로 위에서부터 번호를 매깁니다.</td>
+            </tr>
+            <tr> <!--3행-->
+                <td>&lt;MENU&gt;...&lt;/MENU&gt;</td>
+                <td>메뉴 목록으로 그리길지 않은 문장의 열거에 사용합니다.</td>
+            </tr>
+            <tr> <!--4행-->
+                <td>&lt;DIR&gt;...&lt;/DIR&gt;</td>
+                <td>디렉토리 목록으로 메뉴 목록보다 짧은 문장을 나열합니다.</td>
+            </tr>
+            <tr> <!--5행-->
+                <td>&lt;DL&gt;...&lt;/DL&gt;</td>
+                <td>정의 목록 태그입니다. &lt;LI&gt;가 아닌 &lt;DT&gt;와 &lt;DD&gt;를 사용합니다.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

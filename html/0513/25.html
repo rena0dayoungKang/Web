@@ -1,0 +1,57 @@
+<!DOCTYPE html><!--html:5자동완성-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 스타일 주기</title><!--title-->
+    <style>
+        input[type=text] { /*text창에만 적용*/
+            color : red;
+        }
+        input:hover, textarea:hover { /*input과 textarea에 마우스올라올때*/
+            background : aliceblue;
+        }
+        input[type=text]:focus, input[type=email]:focus {
+            /*input의 text창 , input의 email창 */
+            font-size : 120%;
+        }
+        label { /*label항목은 블록타입, 패딩값주기*/
+            display : block; /*새 라인에서 시작*/
+            padding : 10px;
+        }
+        label span { /*label항목의 span 항목의 float설정, 텍스트정렬*/
+            float : left;
+            width : 120px;
+            text-align : right;
+            padding : 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>CONTACT US</h3>  <!--표제부h3 18.72px-->
+    <hr><!--한줄 라인 만들기 -->
+    <form> <!--폼 만들기-->
+        <label> <!--label-->
+            <span>Name</span>  <!--span-->
+            <input type="text" placeholder="Elvis"><br> 
+            <!--text입력하고 나타나는 기본값 설정하기-->
+        </label>
+        <label>
+            <span>Email</span>  <!--span-->
+            <input type="email" placeholder="elvis@graceland.com"><br>
+            <!--email입력하고 나타나는 기본값 설정하기-->
+        </label>
+        <label>
+            <span>Comment</span>  <!--span-->
+            <textarea placeholder="메시지를 남겨주세요"></textarea>
+            <!--나타나는 기본값 설정하기-->
+        </label>
+        <label>
+            <span></span>  <!--span-->
+            <input type="submit" value="submit"><br>
+             <!--submit의 타입은 버튼형태로 나타난다.-->
+        </label>
+    </form>
+</body>
+</html>

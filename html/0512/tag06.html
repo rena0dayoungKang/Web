@@ -1,0 +1,40 @@
+<!--문서를 가운데로 정렬시켜 주는 태그-->
+<!DOCTYPE html> <!--html:5자동완성-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tag06</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        thead {
+            text-align: center; background-color: grey;
+        }
+        th, td {
+            min-width: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table cellpadding=5>
+        <thead>
+            <tr> <!--제목-->
+                <th>형식</th>
+                <th>구성</th>
+                <th>내용</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <!--1행-->
+                <td>&lt;CENTER&gt; not supported</td>
+                <td>&lt;CENTER&gt;...&lt;/CENTER&gt;</td>
+                <td>전체 문장을 가운데로 정렬시켜 줍니다.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

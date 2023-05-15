@@ -1,0 +1,66 @@
+<!--문서의 기본 구조를 나타내 주는 태그-->
+<!DOCTYPE html> <!--html:5자동완성-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tag00</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        thead {
+            text-align: center; background-color: grey;
+        }
+        th, td {
+            min-width: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table cellpadding=5>  <!--cellpadding: 셀 내부와 글자 사이의 간격 5-->
+        <thead>
+            <tr> <!--제목-->
+                <th>형식</th> <!--thead 는 tr 내부에 th사용-->
+                <th>구성</th>
+                <th>내용</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <!--1행-->
+                <td>&lt;HTML&gt;</td>  <!--tbody는 tr내부에 td사용, 1열-->
+                <td>&lt;HTML&gt;....&lt;/HTML&gt;</td> <!--꺽쇠기호 &lt; : <  &gt; : >  , 2열-->
+                <td>HTML 언어로 작성되어 있다는 것을 알려줍니다.</td>  <!--3열-->
+            </tr>
+            <tr> <!--2행-->
+                <td>&lt;HEAD&gt;</td>  <!--1열-->
+                <td>&lt;HEAD&gt;....&lt;/HEAD&gt;</td>  <!--2열-->
+                <td>Heading의 준말로 글의 머리말에 해당합니다.</td>  <!--3열-->
+            </tr>
+            <tr>
+                <td>&lt;BODY&gt;</td>  <!--1열-->
+                <td>&lt;BODY&gt;....&lt;/BODY&gt;</td>  <!--2열-->
+                <td>본문에 해당하는 부분을 알려줍니다.</td>  <!--3열-->
+            </tr>
+            <tr> <!--3행-->
+                <td>&lt;TITLE&gt;</td>  <!--1열-->
+                <td>&lt;TITLE&gt;....&lt;/TITLE&gt;</td>  <!--2열-->
+                <td>타이틀바에 새겨질 글자를 정의합니다.</td>  <!--3열-->
+            </tr>
+            <tr> <!--4행-->
+                <td>&lt;Hn&gt;</td>  <!--1열-->
+                <td>&lt;Hn&gt;....&lt;/Hn&gt;</td>  <!--2열-->
+                <td>표제 부분에 들어갈 말을 정의합니다. 1~6까지의 숫자를 사용하고 숫자가 커질수록 표제는 작아집니다. 
+                    기본값은 H4입니다.</td>   <!--3열-->
+            </tr>
+            <tr>  <!--5행-->
+                <td>&lt;!--...--&gt;</td>  <!--1열-->
+                <td>&lt;!--주석내용--&gt;</td>  <!--2열-->
+                <td>주석을 달거나 잠시동안 이미지를 보이지 않게 할 때 사용합니다.</td>   <!--3열-->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

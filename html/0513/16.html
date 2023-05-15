@@ -1,0 +1,48 @@
+<!DOCTYPE html><!--html:5자동완성-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative 배치</title><!--title-->
+    <style>
+         /*CSS스타일 시트 작성 */
+        div {  /*div블록 인라인블록박스형태, 사이즈지정, 테두리지정, 
+            텍스트 중앙정렬, 배경색깔지정*/
+            display : inline-block;
+            height : 50px;
+            width : 50px;
+            border : 1px solid lightgray;
+            text-align : center;
+            color : white;
+            background : red;
+        }
+        #down:hover {  /*띄어쓰기 없음 */
+             /*아이디가 down인 div에 커서를 올려놓았을 때 상대배치형태, 
+             위치와 배경색지정*/
+            position : relative; 
+            left : 20px;
+            top : 20px;
+            background : green;
+        }
+        #up:hover {  /*띄어쓰기 없음 */
+            /*아이디가 up div에 커서를 올려놓았을 때 상대배치형태, 
+             위치와 배경색지정*/
+            position : relative;
+            right : 20px;
+            bottom : 20px;
+            background : green;
+        }
+    </style>
+</head>
+<body>
+    <h3>상대 배치, relative</h3> <!--표제부h3 18.72px-->
+    <hr> <!--한줄 라인 만들기 -->
+        <div>T</div>  <!--div 블록 -->
+        <div id="down">h</div><!--아이디가 down인 div 블록 -->
+        <div >a</div> <!--div 블록 -->
+        <div>n</div> <!--div 블록 -->
+        <div id="up">k</div> <!--아이디가 up인 div 블록 -->
+        <div>s</div> <!--div 블록 -->
+</body>
+</html>

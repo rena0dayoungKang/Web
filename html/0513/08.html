@@ -1,0 +1,58 @@
+<!DOCTYPE html><!--html:5자동완성-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셀렉터 만들기</title><!--타이틀-->
+    <style>
+        /*CSS스타일 시트 작성 */
+        h3, li { /*태그 이름 셀렉터*/
+            color:brown;   /*h3, li태그의 폰트색깔 지정*/
+        }
+        div > div > strong { /*자식 셀렉터*/
+            background:yellow;
+        }
+        ul strong { /*자손 셀렉터*/
+            color:dodgerblue;
+        }
+        .warning { /*class 셀렉터*/
+            color:red;
+        }
+        body.main { /*class 셀렉터*/
+            background:aliceblue;
+        }
+        #list { /*id셀렉터*/
+            background:mistyrose;
+        }
+        #list span { /*자손 셀렉터*/
+            color:forestgreen;
+        }
+        h3:first-letter { /*가상 클래스 셀렉터*/
+            color:red;
+        }
+        li:hover { /*가상 클래스 셀렉터*/
+            background:yellow;
+        }
+    </style>
+</head>
+<body class="main"> <!-- body class 이름을 main으로 설정, main의 배경색지정-->
+    <h3>Web Programming</h3> <!--h3표제부의 첫 글자는 빨간색, 나머지글자는 갈색-->
+    <hr> <!--한 줄 표시 -->
+    <div> <!--div시작-->
+        <div>2학기   
+            <strong>학습 내용</strong>입니다. 
+            <!--div자식의 div자식의 strong의 배경색-->
+        </div>
+        <ul id="list">
+             <!--ul부분의 id는 list로 설정 id부를때는#, 배경색은 mistyrose-->
+            <!--li의 hover시 배경색 지정, list의 자손 span 폰트색깔을 지정-->
+            <li><span>HTML5</span></li> 
+            <li><strong>CSS</strong></li> <!--ul의 자손 strong폰트색깔을지정-->
+            <li>JAVASCRIPT</li> 
+        </ul>
+        <div class="warning">60점 이하는 F</div> 
+        <!--div class이름을 warning. 클래스 이름 부를때는 점(.)-->
+    </div>
+</body>
+</html>
