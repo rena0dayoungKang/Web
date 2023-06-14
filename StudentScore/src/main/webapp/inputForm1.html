@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Add Student Score</title> 
+<script>
+// 특수문자 입력 방지
+function characterCheck(obj){
+var regExp = /[ \{\}\[\]\/?.,;:|\)*~`!^\ -_+┼<>@\#$%&\'\"\\\(\=]/gi; 
+// 허용할 특수문자는 여기서 삭제하면 됨
+// 띄어쓰기도 특수문자 처리됨
+if( regExp.test(obj.value) ){
+	alert("특수문자는 입력하실수 없습니다.");
+	obj.value = null;
+}
+}
+</script>
+</head>
+<body>
+	<h1>Add Student Score</h1><br>
+	<form method='post' action='insertDB.jsp'> <!-- 아래 폼을 다 채우고 실행은 insertDB.jsp로 간다 -->
+		<table cellspacing=1 width=400 border=0> <!-- 테이블 만들기  -->
+			<tr>
+				<td width=300></td>
+				<td width=100><input type="submit" value="ADD"></input></td> <!-- 추가버튼만들기 -->
+			</tr>
+		</table>
+		
+		<table cellspacing=1 width=400 border=1>
+			<tr>
+				<td width=100><p align=center>Name</p></td>  <!-- 이름 적는 텍스트 창 -->
+				<td width=300><p align=center><input type="text" name="name" maxlength="6" 
+				onkeyup="characterCheck(this)" onkeydown="characterCheck(this)" required></input</p></td> 
+			</tr>
+			<tr>
+				<td width=100><p align=center>Student ID</p></td><!-- 학번은 자동으로 맨 뒷번호등으로 부여된다 -->
+				<td width=300><p align=center>Auto Given ID</p></td> 
+			</tr>
+			<tr>
+				<td width=100><p align=center>Korean Score</p></td><!-- 점수 입력란 최소0부터 100까지입력가능 -->
+				<td width=300><p align=center><input type='number' min='0' max='100' name='kor' value='' required></input</p></td>
+			</tr>
+			<tr>
+				<td width=100><p align=center>English Score</p></td><!-- 점수 입력란 최소0부터 100까지입력가능 -->
+				<td width=300><p align=center><input type='number' min='0' max='100'name='eng' value='' required></input</p></td>
+			</tr>
+			<tr>
+				<td width=100><p align=center>Math Score</p></td><!-- 점수 입력란 최소0부터 100까지입력가능 -->
+				<td width=300><p align=center><input type='number' min='0' max='100'name='mat' value='' required></input</p></td>
+			</tr>
+		</table>
+		
+	</form>
+	
+</body>
+</html>
